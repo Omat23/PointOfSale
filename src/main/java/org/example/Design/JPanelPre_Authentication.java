@@ -10,5 +10,6 @@ public class JPanelPre_Authentication extends JPanel {
         setBounds(22, 12, 400, 405);
         setBackground(Color.decode("#76e4f8"));
         add(new JLabelTitlePreAuthentication().getTittleWindowPreAuthentication());
+        add(new JTextFieldsPreAuthentication().getTextFieldsWindowPreAuthentication());
     }
 }
