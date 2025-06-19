@@ -1,4 +1,4 @@
-package org.example.Design.JLabelsPreAuthentication;
+package org.example.Design.LoginDesign.JComponentsLogin;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,7 +28,7 @@ public class JLabelsLogin {
         this.emailPreAuthentication.setLayout(null);
         this.emailPreAuthentication.setText("Email: ");
         this.emailPreAuthentication.setFont(new Font("Arial", Font.BOLD, 16));
-        this.emailPreAuthentication.setBounds(25,100,200,90);
+        this.emailPreAuthentication.setBounds(25,85,200,90);
         this.emailPreAuthentication.setVisible(true);
         return this.emailPreAuthentication;
     }
@@ -37,7 +37,7 @@ public class JLabelsLogin {
         this.passwordPreAuthentication.setLayout(null);
         this.passwordPreAuthentication.setText("Password: ");
         this.passwordPreAuthentication.setFont(new Font("Arial", Font.BOLD, 16));
-        this.passwordPreAuthentication.setBounds(25,200,200,90);
+        this.passwordPreAuthentication.setBounds(25,170,200,90);
         this.passwordPreAuthentication.setVisible(true);
         return this.passwordPreAuthentication;
     }

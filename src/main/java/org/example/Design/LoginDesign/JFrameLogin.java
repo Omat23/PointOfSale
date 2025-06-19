@@ -1,11 +1,11 @@
-package org.example.Design;
+package org.example.Design.LoginDesign;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class JFrameAuthentication extends JFrame {
+public class JFrameLogin extends JFrame {
 
-    public JFrameAuthentication() {
+    public JFrameLogin() {
         setLayout(null);
         setBounds(0,0,460,480);
         addJPanelPre_Authentication();
@@ -15,6 +15,6 @@ public class JFrameAuthentication extends JFrame {
     }
 
     public void addJPanelPre_Authentication(){
-        this.add(new JPanelPre_Authentication());
+        this.add(new JPanelLogin());
     }
 }
