@@ -1,5 +1,7 @@
 package org.example.Design.LoginDesign.JComponentsLogin;
 
+import org.example.Events.JButtonLoginEvent;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -30,6 +32,7 @@ public class JButtonLogin {
         this.linkRegister.setBounds(30, 345, 300,25);
         this.linkRegister.setForeground(Color.decode("#358bff"));
         this.linkRegister.setBackground(Color.white);
+        this.linkRegister.addActionListener(new JButtonLoginEvent(this.linkRegister)); //Se captura el evento del boton
         this.linkRegister.setVisible(true);
         return this.linkRegister;
     }

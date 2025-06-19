@@ -9,7 +9,7 @@ public class JFrameLogin extends JFrame {
         setLayout(null);
         setBounds(0,0,460,480);
         addJPanelPre_Authentication();
-        this.getContentPane().setBackground(Color.decode("#76e4f8"));
+        this.getContentPane().setBackground(Color.decode("#67d5ee"));
         setVisible(true);
         setLocationRelativeTo(null);
     }
