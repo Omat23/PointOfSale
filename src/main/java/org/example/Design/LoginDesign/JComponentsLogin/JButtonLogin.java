@@ -29,7 +29,7 @@ public class JButtonLogin {
         this.linkRegister.setLayout(null);
         this.linkRegister.setText("Do you not have account with us?");
         this.linkRegister.setBorder(BorderFactory.createMatteBorder(0,0,0,0, Color.WHITE));
-        this.linkRegister.setBounds(30, 345, 300,25);
+        this.linkRegister.setBounds(30, 335, 300,25);
         this.linkRegister.setForeground(Color.decode("#358bff"));
         this.linkRegister.setBackground(Color.white);
         this.linkRegister.addActionListener(new JButtonLoginEvent(this.linkRegister)); //Se captura el evento del boton

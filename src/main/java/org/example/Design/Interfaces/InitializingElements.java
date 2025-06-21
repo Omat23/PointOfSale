@@ -1,4 +1,4 @@
-package org.example.Design.LoginDesign.InitializingElements.Interfaces;
+package org.example.Design.Interfaces;
 
 public interface InitializingElements {
 

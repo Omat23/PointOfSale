@@ -7,10 +7,11 @@ public class JFrameRegister extends JFrame {
 
     public JFrameRegister() throws HeadlessException {
             setLayout(null);
-            setBounds(0,0,500,550);
+            setBounds(0,0,500,620);
             this.getContentPane().setBackground(Color.decode("#67d5ee"));
             add(new JPanelRegister());
             setVisible(true);
             setLocationRelativeTo(null);
+            setResizable(false);
     }
 }

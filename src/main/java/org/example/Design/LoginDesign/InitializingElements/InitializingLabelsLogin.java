@@ -1,6 +1,6 @@
 package org.example.Design.LoginDesign.InitializingElements;
 
-import org.example.Design.LoginDesign.InitializingElements.Interfaces.InitializingElements;
+import org.example.Design.Interfaces.InitializingElements;
 import org.example.Design.LoginDesign.JComponentsLogin.JLabelsLogin;
 
 import javax.swing.*;
