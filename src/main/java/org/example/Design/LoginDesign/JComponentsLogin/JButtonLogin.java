@@ -1,6 +1,7 @@
 package org.example.Design.LoginDesign.JComponentsLogin;
 
 import org.example.Events.JButtonLoginEvent;
+import org.example.Resources.GenerateImageIcon;
 
 import javax.swing.*;
 import java.awt.*;

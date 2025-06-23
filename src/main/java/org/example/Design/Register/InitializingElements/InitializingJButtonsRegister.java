@@ -12,8 +12,8 @@ public class InitializingJButtonsRegister implements InitializingElements {
     private JButtonsRegister jButtonsRegister;
     private List<JButton> buttonsRegisterList;
 
-    public InitializingJButtonsRegister() {
-        this.jButtonsRegister = new JButtonsRegister();
+    public InitializingJButtonsRegister(JPasswordField jPasswordField) {
+        this.jButtonsRegister = new JButtonsRegister(jPasswordField);
         this.buttonsRegisterList = new ArrayList<>();
         initializingComponents();
     }
@@ -21,6 +21,7 @@ public class InitializingJButtonsRegister implements InitializingElements {
     @Override
     public void initializingComponents() {
         this.buttonsRegisterList.add(jButtonsRegister.getRegisterButton());
+        this.buttonsRegisterList.add(jButtonsRegister.getJButtonShowPassword());
     }
 
     public List<JButton> getButtonsRegisterList() {
