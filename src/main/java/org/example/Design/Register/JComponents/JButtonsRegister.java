@@ -15,7 +15,7 @@ public class JButtonsRegister {
 
     public JButtonsRegister(JPasswordField passwordField) {
         this.registerButton = new JButton();
-        this.showPassword = new JButton(GenerateImageIconPassword.generateImageIcon("PasswordIcon.png"));
+        this.showPassword = new JButton(GenerateImageIconPassword.generateImageIcon("PasswordIcon.png", 68, 50));
         this.passwordField = passwordField;
     }
 
