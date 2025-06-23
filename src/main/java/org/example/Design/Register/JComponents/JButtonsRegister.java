@@ -1,8 +1,7 @@
 package org.example.Design.Register.JComponents;
 
-import org.example.Events.JButtonLoginEvent;
+import org.example.Design.Resources.GenerateImageIconPassword;
 import org.example.Events.JButtonRegisterEvent;
-import org.example.Resources.GenerateImageIcon;
 
 import javax.swing.*;
 import javax.swing.border.MatteBorder;
@@ -12,13 +11,11 @@ public class JButtonsRegister {
 
     private JButton registerButton;
     private JButton showPassword;
-    private ImageIcon imageIcon;
     private JPasswordField passwordField;
 
     public JButtonsRegister(JPasswordField passwordField) {
         this.registerButton = new JButton();
-        generateImageIcon();
-        this.showPassword = new JButton(this.imageIcon);
+        this.showPassword = new JButton(GenerateImageIconPassword.generateImageIcon("PasswordIcon.png"));
         this.passwordField = passwordField;
     }
 
@@ -40,11 +37,5 @@ public class JButtonsRegister {
         this.showPassword.addActionListener(new JButtonRegisterEvent(this.showPassword, this.passwordField));
         this.showPassword.setVisible(true);
         return this.showPassword;
-    }
-
-    public void generateImageIcon(){
-        Image image = new GenerateImageIcon("PasswordIcon.png").getImageIcon().getImage().getScaledInstance(60,50,
-                Image.SCALE_SMOOTH);
-        this.imageIcon = new ImageIcon(image);
     }
 }
