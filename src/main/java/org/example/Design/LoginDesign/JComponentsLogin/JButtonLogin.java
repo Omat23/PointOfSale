@@ -1,5 +1,6 @@
 package org.example.Design.LoginDesign.JComponentsLogin;
 
+import org.example.Design.LoginDesign.JFrameLogin;
 import org.example.Events.JButtonLoginEvent;
 import org.example.Resources.GenerateImageIcon;
 
@@ -10,10 +11,13 @@ public class JButtonLogin {
 
     private JButton submitLogin;
     private JButton linkRegister;
+    private JFrameLogin windowLogin;
 
-    public JButtonLogin() {
+    public JButtonLogin(JFrameLogin windowLogin) {
         this.submitLogin = new JButton();
         this.linkRegister = new JButton();
+        this.windowLogin = windowLogin;
+        sentElementsToEvent();
     }
 
     public JButton getJButtonSubmitLogin(){
@@ -33,8 +37,12 @@ public class JButtonLogin {
         this.linkRegister.setBounds(30, 335, 300,25);
         this.linkRegister.setForeground(Color.decode("#358bff"));
         this.linkRegister.setBackground(Color.white);
-        this.linkRegister.addActionListener(new JButtonLoginEvent(this.linkRegister)); //Se captura el evento del boton
         this.linkRegister.setVisible(true);
         return this.linkRegister;
+    }
+
+    public void sentElementsToEvent(){
+        JButtonLoginEvent jButtonLoginEvent = new JButtonLoginEvent(this.linkRegister, this.windowLogin);
+        this.linkRegister.addActionListener(jButtonLoginEvent);
     }
 }

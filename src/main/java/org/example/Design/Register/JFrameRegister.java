@@ -9,7 +9,7 @@ public class JFrameRegister extends JFrame {
             setLayout(null);
             setBounds(0,0,500,620);
             this.getContentPane().setBackground(Color.decode("#67d5ee"));
-            add(new JPanelRegister());
+            add(new JPanelRegister(this));
             setVisible(true);
             setLocationRelativeTo(null);
             setResizable(false);

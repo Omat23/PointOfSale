@@ -15,6 +15,6 @@ public class JFrameLogin extends JFrame {
     }
 
     public void addJPanelPre_Authentication(){
-        this.add(new JPanelLogin());
+        this.add(new JPanelLogin(this));
     }
 }

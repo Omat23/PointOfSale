@@ -2,6 +2,7 @@ package org.example.Design.LoginDesign.InitializingElements;
 
 import org.example.Design.Interfaces.InitializingElements;
 import org.example.Design.LoginDesign.JComponentsLogin.JButtonLogin;
+import org.example.Design.LoginDesign.JFrameLogin;
 
 import javax.swing.*;
 import java.util.ArrayList;
@@ -12,8 +13,8 @@ public class InitializingJButtonsLogin implements InitializingElements {
     private JButtonLogin jButtonLogin;
     private List<JButton> listButtons;
 
-    public InitializingJButtonsLogin() {
-        this.jButtonLogin = new JButtonLogin();
+    public InitializingJButtonsLogin(JFrameLogin windowLogin) {
+        this.jButtonLogin = new JButtonLogin(windowLogin);
         this.listButtons = new ArrayList<>();
         initializingComponents();
     }

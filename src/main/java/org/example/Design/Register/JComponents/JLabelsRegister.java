@@ -70,7 +70,7 @@ public class JLabelsRegister {
         this.passwordRegister.setLayout(null);
         this.passwordRegister.setText("Password: (Min 8 characters)");
         this.passwordRegister.setFont(new Font("Arial", Font.BOLD, 16));
-        this.passwordRegister.setBounds(25, 377, 250, 50);
+        this.passwordRegister.setBounds(25, 375, 250, 50);
         this.passwordRegister.setVisible(true);
         return this.passwordRegister;
     }

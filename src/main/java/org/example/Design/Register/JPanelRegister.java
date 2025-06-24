@@ -11,19 +11,19 @@ import java.awt.*;
 
 public class JPanelRegister extends JPanel {
 
-    public JPanelRegister() {
+    public JPanelRegister(JFrameRegister windowRegister) {
         setLayout(null);
         setBounds(30, 22, 420, 520);
         setBackground(Color.WHITE);
-        addComponents();
+        addComponents(windowRegister);
         setVisible(true);
     }
 
-    public void addComponents(){
+    public void addComponents(JFrameRegister windowRegister){
         AddComponents.addComponents(this, new InitializingJLabelsRegister().getLabelsRegister());
         JTextFieldsRegister jTextFieldsRegister = new JTextFieldsRegister();
         AddComponents.addComponents(this, new InitializingJTextFieldsRegister(jTextFieldsRegister).getTextFieldList());
-        AddComponents.addComponents(this, new InitializingJButtonsRegister(jTextFieldsRegister.getFieldPasswordRegister())
+        AddComponents.addComponents(this, new InitializingJButtonsRegister(jTextFieldsRegister.getFieldPasswordRegister(), windowRegister)
                                                                                     .getButtonsRegisterList());
     }
 }

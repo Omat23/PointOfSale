@@ -11,18 +11,18 @@ import java.awt.*;
 
 public class JPanelLogin extends JPanel {
 
-    public JPanelLogin() {
+    public JPanelLogin(JFrameLogin windowLogin) {
         setLayout(null);
         setBounds(45, 28, 360, 375);
         setBackground(Color.WHITE);
-        addComponents();
+        addComponents(windowLogin);
         setVisible(true);
     }
 
-    public void addComponents(){
+    public void addComponents(JFrameLogin windowLogin){
         AddComponents.addComponents(this, new InitializingLabelsLogin().getListLabelsLogin());
         AddComponents.addComponents(this, new InitializingJTextFieldsLogin().getJTextFieldsLogin());
-        AddComponents.addComponents(this, new InitializingJButtonsLogin().getListButtons());
+        AddComponents.addComponents(this, new InitializingJButtonsLogin(windowLogin).getListButtons());
     }
 
 }
