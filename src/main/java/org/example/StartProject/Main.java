@@ -1,4 +1,4 @@
-package org.example;
+package org.example.StartProject;
 
 import org.example.Design.LoginDesign.JFrameLogin;
 

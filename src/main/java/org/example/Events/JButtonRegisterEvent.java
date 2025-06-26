@@ -3,6 +3,7 @@ package org.example.Events;
 import org.example.Design.LoginDesign.JFrameLogin;
 import org.example.Design.Register.JFrameRegister;
 import org.example.Design.Resources.GenerateImageIconPassword;
+import org.example.Design.SelectStatus.JFrameSelectStatus;
 
 import javax.swing.*;
 
@@ -13,14 +14,17 @@ public class JButtonRegisterEvent implements ActionListener {
 
     private JButton buttonShowPasswordFromRegister;
     private JButton buttonLoginComeBack;
+    private JButton buttonRegisterUser;
     private JFrameRegister windowRegister;
+
     private static JFrameLogin frameWindowLogin;
     private static JPasswordField passwordField;
 
-    public JButtonRegisterEvent(JButton buttonShowPasswordRegister, JButton buttonLoginComeBack, JFrameRegister windowRegister) {
+    public JButtonRegisterEvent(JButton buttonShowPasswordRegister, JButton buttonLoginComeBack, JFrameRegister windowRegister, JButton buttonRegisterUser) {
         this.buttonShowPasswordFromRegister = buttonShowPasswordRegister;
         this.buttonLoginComeBack = buttonLoginComeBack;
         this.windowRegister = windowRegister;
+        this.buttonRegisterUser = buttonRegisterUser;
     }
 
     @Override
@@ -39,6 +43,10 @@ public class JButtonRegisterEvent implements ActionListener {
             frameWindowLogin.setVisible(true);
             JButtonLoginEvent.setJFrameRegister(this.windowRegister);
             this.windowRegister.setVisible(false);
+        }
+
+        if(eventButton.getActionCommand().equals(this.buttonRegisterUser.getActionCommand())){
+            new JFrameSelectStatus();
         }
     }
 

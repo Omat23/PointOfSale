@@ -59,9 +59,10 @@ public class JButtonsRegister {
     }
 
     public void sentElementsToEvent(){
-        JButtonRegisterEvent jButtonRegisterEvent = new JButtonRegisterEvent(this.showPassword, this.buttonBackLogin, this.windowRegister);
+        JButtonRegisterEvent jButtonRegisterEvent = new JButtonRegisterEvent(this.showPassword, this.buttonBackLogin, this.windowRegister, this.registerButton);
         this.showPassword.addActionListener(jButtonRegisterEvent);
         this.buttonBackLogin.addActionListener(jButtonRegisterEvent);
+        this.registerButton.addActionListener(jButtonRegisterEvent);
     }
 
 }

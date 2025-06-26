@@ -11,6 +11,7 @@ public class JFrameLogin extends JFrame {
         addJPanelPre_Authentication();
         this.getContentPane().setBackground(Color.decode("#67d5ee"));
         setVisible(true);
+        this.setResizable(false);
         setLocationRelativeTo(null);
     }
 
