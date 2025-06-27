@@ -21,6 +21,7 @@ public class JPanelRegister extends JPanel {
 
     public void addComponents(JFrameRegister windowRegister){
         AddComponents.addComponents(this, new InitializingJLabelsRegister().getLabelsRegister());
+
         JTextFieldsRegister jTextFieldsRegister = new JTextFieldsRegister();
         AddComponents.addComponents(this, new InitializingJTextFieldsRegister(jTextFieldsRegister).getTextFieldList());
         AddComponents.addComponents(this, new InitializingJButtonsRegister(jTextFieldsRegister.getFieldPasswordRegister(), windowRegister)

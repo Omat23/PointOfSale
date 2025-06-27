@@ -1,4 +1,4 @@
-package org.example.Design.Resources;
+package org.example.Design.Register.Resources;
 
 import org.example.Resources.GenerateImageIcon;
 

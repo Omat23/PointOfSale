@@ -2,7 +2,7 @@ package org.example.Events;
 
 import org.example.Design.LoginDesign.JFrameLogin;
 import org.example.Design.Register.JFrameRegister;
-import org.example.Design.Resources.GenerateImageIconPassword;
+import org.example.Design.Register.Resources.GenerateImageIconPassword;
 import org.example.Design.SelectStatus.JFrameSelectStatus;
 
 import javax.swing.*;
@@ -46,6 +46,7 @@ public class JButtonRegisterEvent implements ActionListener {
         }
 
         if(eventButton.getActionCommand().equals(this.buttonRegisterUser.getActionCommand())){
+            this.windowRegister.setVisible(false);
             new JFrameSelectStatus();
         }
     }

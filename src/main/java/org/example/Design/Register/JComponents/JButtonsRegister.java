@@ -1,7 +1,7 @@
 package org.example.Design.Register.JComponents;
 
 import org.example.Design.Register.JFrameRegister;
-import org.example.Design.Resources.GenerateImageIconPassword;
+import org.example.Design.Register.Resources.GenerateImageIconPassword;
 import org.example.Events.JButtonRegisterEvent;
 
 import javax.swing.*;
